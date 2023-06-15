@@ -47,7 +47,7 @@
       class="header-body bg-firstBlack px-10 py-5 flex justify-between items-center"
     >
       <div class="header-nav flex items-center">
-        <div class="header-nav-brand flex items-center hidden">
+        <div class="header-nav-brand flex items-center">
           <img
             class="header-nav-logo"
             src="https://hbg-fed-static-prd.hbfile.net/enhome/favicon.ico"
@@ -102,7 +102,39 @@
       </div>
     </header>
 
-    <section class="showcase flex px-36 min-h-[90%] mt-20">
+    <div class="navOnSmallScreen hidden bg-firstBlack flex flex-col gap-5">
+      <div class="header-nav-mobile">
+        <div class="text-mainTextColor flex flex-col mr-7 gap-5 text-right">
+          <div class="">Buy Crypto</div>
+          <div class="">Market</div>
+          <div class="">Trades</div>
+          <div class="">Derivatives</div>
+          <div class="">Earn</div>
+          <div class="">Finance</div>
+          <div class="">Content</div>
+          <div class="">Activity</div>
+          <div class="">web3.0</div>
+        </div>
+      </div>
+
+      <div class="flex flex-col text-right text-mainTextColor">
+        <a href="">
+          <button class="px-6 py-2">login</button>
+        </a>
+        <a href="">
+          <button class="bg-mainBlue px-4 py-2 rounded-2xl">Sign up</button>
+        </a>
+      </div>
+
+      <div class="text-mainTextColor mr-7 flex flex-col gap-5 text-right">
+        <i class="fa-solid fa-clipboard-question"></i>
+        <i class="fa-regular fa-message"></i>
+        <i class="fa-regular fa-file-zipper"></i>
+        <i class="fa-solid fa-earth-europe"></i>
+      </div>
+    </div>
+
+    <section class="showcase flex lg:px-36 min-h-[90%] lg:mt-20 mt-12">
       <div class="w-1/2 flex flex-col justify-center gap-10">
         <h1 class="text-6xl font-bold">
           Buy Crypto on <span class="text-blue2">Huobi</span> Your Top Pick
@@ -120,7 +152,7 @@
         </button>
       </div>
 
-      <div class="showcase-img w-1/2">
+      <div class="showcase-img lg:w-1/2">
         <img src="./asset/huobi.svg" alt="" class="" />
       </div>
     </section>
