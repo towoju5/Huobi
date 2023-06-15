@@ -12,10 +12,8 @@ toggleBtn.addEventListener('click', () => {
 
 $(function(){
   $('.menu-item').each(function(){
-      $(this).hover(function(){
-          // console.log($(this).siblings('.sub-menu'))
-          // $(this).siblings('.sub-menu').slideToggle(300);            
-          $(this).siblings('.submenu').toggle();
+      $(this).hover(function(){            
+          $(this).children('.submenu').stop().slideToggle(300);
       });
   });
 });
@@ -36,7 +34,3 @@ function goPrev() {
 }
 setInterval(goNext, 1000)
 prev.addEventListener("click", goPrev);
-
-$('svg').hover(
-  $(this).animate()
-)
