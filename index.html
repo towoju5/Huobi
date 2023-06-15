@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <style type="text/taiwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+
+    <!-- Tailwind confiq -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              firstBlack: '#0E1015',
+              mainTextColor: '#F0F1F4',
+              mainBlue: '#0094ff',
+              blue2: '#0173e5',
+              cbg: '#f7f9fb',
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://hbg-fed-static-prd.hbfile.net/enhome/favicon.ico"
+    />
+
+    <title>Huobi || clone</title>
+  </head>
+  <body>
+    <header
+      class="header-body bg-firstBlack px-10 py-5 flex justify-between items-center"
+    >
+      <div class="header-nav flex items-center">
+        <div class="header-nav-brand flex items-center hidden">
+          <img
+            class="header-nav-logo"
+            src="https://hbg-fed-static-prd.hbfile.net/enhome/favicon.ico"
+            alt="Huobi - Leading Bitcoin Exchange"
+            class=""
+          />
+          <p class="text-mainTextColor text-3xl">Huobi</p>
+        </div>
+
+        <div class="header-nav-nav ml-5 p-2 w-5/7">
+          <div class="text-mainTextColor flex justify-between text-center">
+            <div class="bg-">Buy Crypto</div>
+            <div class="">Market</div>
+            <div class="">Trades</div>
+            <div class="">Derivatives</div>
+            <div class="">Earn</div>
+            <div class="">Finance</div>
+            <div class="">Content</div>
+            <div class="flex items-center">
+              Activity
+              <img src="./asset/coin.webp" alt="" class="coin-img" />
+            </div>
+            <div class="">web3.0</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-user flex items-center">
+        <div class="header-user-p header-user-log text-mainTextColor">
+          <a href="">
+            <button class="px-6 py-2">login</button>
+          </a>
+          <a href="">
+            <button class="bg-mainBlue px-4 py-2 rounded-2xl">Sign up</button>
+          </a>
+        </div>
+
+        <div
+          class="header-user-p header-user-icon text-mainTextColor flex justify-between"
+        >
+          <i class="fa-solid fa-clipboard-question"></i>
+          <i class="fa-regular fa-message"></i>
+          <i class="fa-regular fa-file-zipper"></i>
+          <i class="fa-solid fa-earth-europe"></i>
+        </div>
+
+        <div class="navbar-toggle text-mainTextColor ml-auto">
+          <button class="toggle-btn">
+            <i class="fa-solid fa-sliders"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="showcase flex lg-px-36 min-h-[90%] mt-20">
+      <div class="w-1/2 flex flex-col justify-center gap-10">
+        <h1 class="text-6xl font-bold">
+          Buy Crypto on <span class="text-blue2">Huobi</span> Your Top Pick
+          Alway
+        </h1>
+        <p class="flex text-2xl">
+          Sign up and trade to earn
+          <img src="./asset/coin.webp" alt="" class="mx-2 coin-img" />
+          <span class="font-bold">2 USDT</span>
+        </p>
+        <button
+          class="showcase-btn bg-blue2 px-10 py-3 text-mainTextColor font-bold"
+        >
+          Sign up
+        </button>
+      </div>
+
+      <div class="showcase-img w-1/2">
+        <img src="./asset/huobi.svg" alt="" class="" />
+      </div>
+    </section>
+
+    <div class="text-center py-5">
+      <h2>
+        Huobi Launches Project Benefits Program to Call for High-quality
+        Projects to List on Huobi <span class="text-blue2">More</span>
+      </h2>
+    </div>
+
+    <section class="px-36 bg-cbg py-5">
+      <div class="img-slider my-10">
+        <div class="slider-body">
+          <div class="slide1">
+            <img src="./asset/slide1.webp" alt="" class="slide-img" />
+          </div>
+          <div class="img-container">
+            <img src="./asset/slide1.webp" alt="" class="slide-img" />
+          </div>
+          <div class="img-container">
+            <img src="./asset/slide1.webp" alt="" class="slide-img" />
+          </div>
+          <div class="img-container">
+            <img src="./asset/slide1.webp" alt="" class="slide-img" />
+          </div>
+          <div class="img-container">
+            <img src="./asset/slide1.webp" alt="" class="slide-img" />
+          </div>
+          <div class="img-container">
+            <img src="./asset/slide1.webp" alt="" class="slide-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/fc49c28ef9.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
