@@ -1,13 +1,13 @@
 'use strict';
 
 const toggleBtn = document.querySelector('.toggle-btn');
-const navbarMenu = document.querySelector('.header-nav-nav');
-console.log(navbarMenu);
+const navOnSmallScreen = document.querySelector('.navOnSmallScreen');
+console.log(navOnSmallScreen);
 console.log(toggleBtn);
 
 toggleBtn.addEventListener('click', () => {
   console.log('i am clicked');
-  navbarMenu.classList.toggle('show-nav');
+  navOnSmallScreen.classList.toggle('hidden');
 });
 
 $(function(){
