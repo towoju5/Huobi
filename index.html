@@ -1,197 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style type="text/taiwindcss">
-      @layer utilities {
+  <!-- tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@300;400;500;700;800&display=swap"
+    rel="stylesheet">
+  <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <style type="text/taiwindcss">
+    @layer utilities {
         .content-auto {
           content-visibility: auto;
         }
       }
     </style>
 
-    <!-- Tailwind confiq -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              firstBlack: '#0E1015',
-              mainTextColor: '#F0F1F4',
-              mainBlue: '#0094ff',
-              blue2: '#0173e5',
-              cbg: '#f7f9fb',
-            },
+  <!-- Tailwind confiq -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            firstBlack: '#0E1015',
+            mainTextColor: '#F0F1F4',
+            mainBlue: '#0094ff',
+            blue2: '#0173e5',
+            cbg: '#f7f9fb',
           },
         },
-      };
-    </script>
+      },
+    };
+  </script>
 
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://hbg-fed-static-prd.hbfile.net/enhome/favicon.ico"
-    />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://hbg-fed-static-prd.hbfile.net/enhome/favicon.ico" />
 
-    <title>Huobi || clone</title>
-  </head>
-  <body>
-    <header
-      class="header-body bg-firstBlack px-10 py-5 flex justify-between items-center"
-    >
-      <div class="header-nav flex items-center">
-        <div class="header-nav-brand flex items-center">
-          <img
-            class="header-nav-logo"
-            src="https://hbg-fed-static-prd.hbfile.net/enhome/favicon.ico"
-            alt="Huobi - Leading Bitcoin Exchange"
-            class=""
-          />
-          <p class="text-mainTextColor text-3xl">Huobi</p>
-        </div>
+  <title>Huobi || clone</title>
+</head>
 
-        <div class="header-nav-nav ml-5 p-2 w-5/7">
-          <div class="text-mainTextColor flex justify-between text-center">
-            <div class="bg-">Buy Crypto</div>
-            <div class="">Market</div>
-            <div class="">Trades</div>
-            <div class="">Derivatives</div>
-            <div class="">Earn</div>
-            <div class="">Finance</div>
-            <div class="">Content</div>
-            <div class="flex items-center">
-              Activity
-              <img src="./asset/coin.webp" alt="" class="coin-img" />
+<body>
+  <header class="header-body bg-firstBlack px-10 py-3 flex justify-between items-center">
+    <div class="header-nav flex items-center">
+      <div class="header-nav-brand flex items-center">
+        <a href="/index.html">
+          <img class="header-nav-logo" src="/asset/logo.svg" alt="Huobi - Leading Bitcoin Exchange">
+        </a>
+        <!-- <span class="text-mainTextColor text-3xl">Huobi</span> -->
+      </div>
+
+      <div class="header-nav-nav ml-5 p-2 w-5/7">
+        <div class="text-mainTextColor flex justify-between text-center">
+          <div class="menu-item">
+            <span>Buy Crypto</span>
+            <div class="submenu">
+              <div class="hbg-dropdown-v2__body p-10">
+                <div class="hbg-dropdown-v2__body-item active">
+                  <div class="hbg-dropdown-v2__body-item-icon">
+                    <img class="hbg-dropdown-v2__body-item-icon-img"
+                      src="https://download.hbfile.net/hbg/img/202211221432/024e30439d4c49e3866bf9c6c33ffa88/967d863b122213531718da493d9b8c69.png"
+                      alt="" />
+                  </div>
+        
+                  <div class="hbg-dropdown-v2__body-item-content">
+                    <div class="hbg-dropdown-v2__body-item-title">Quick Buy/Sell</div>
+                    <div class="hbg-dropdown-v2__body-item-subtitle">
+                      Buy cryptos with Visa, Mastercard, and more
+                    </div>
+                  </div>
+                </div>
+                <div class="hbg-dropdown-v2__body-item active">
+                  <div class="hbg-dropdown-v2__body-item-icon">
+                    <img class="hbg-dropdown-v2__body-item-icon-img"
+                      src="https://download.hbfile.net/hbg/img/202211221433/e13056adb7ed495e820f8d457da48b6f/76519f3d483de65fe41caf578a303ceb.png"
+                      alt="" />
+                  </div>
+                  <div class="hbg-dropdown-v2__body-item-content">
+                    <div class="hbg-dropdown-v2__body-item-title">Fiat Deposit</div>
+                    <div class="hbg-dropdown-v2__body-item-subtitle">
+                      Deposit fiat currencies at a low fee
+                    </div>
+                  </div>
+                </div>
+                <div class="hbg-dropdown-v2__body-item active">
+                  <div class="hbg-dropdown-v2__body-item-icon">
+                    <img class="hbg-dropdown-v2__body-item-icon-img"
+                      src="https://download.hbfile.net/hbg/img/202302161735/be177043bc1d4e57870b3c5a98aa59c9/a675f0db66b2172e0ea19681c0a1d9bc.png"
+                      alt="" />
+                  </div>
+                  <div class="hbg-dropdown-v2__body-item-content">
+                    <div class="hbg-dropdown-v2__body-item-title">OTC Desk</div>
+                    <div class="hbg-dropdown-v2__body-item-subtitle">
+                      For large quota with dedicated service
+                    </div>
+                  </div>
+                </div>
+                <div class="hbg-dropdown-v2__body-item active">
+                  <div class="hbg-dropdown-v2__body-item-icon">
+                    <img class="hbg-dropdown-v2__body-item-icon-img"
+                      src="https://download.hbfile.net/hbg/img/202211221433/f954149ddcdd435a9872223e359ba6b8/a708de3e75f05013faec9c54a52ca95e.png"
+                      alt="" />
+                  </div>
+                  <div class="hbg-dropdown-v2__body-item-content">
+                    <div class="hbg-dropdown-v2__body-item-title">P2P</div>
+                    <div class="hbg-dropdown-v2__body-item-subtitle">
+                      Match the best price with zero fees
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="">web3.0</div>
           </div>
+          <div class="menu-item">Market</div>
+          <div class="menu-item">Trades</div>
+          <div class="menu-item">Derivatives</div>
+          <div class="menu-item">Earn</div>
+          <div class="menu-item">Finance</div>
+          <div class="menu-item">Content</div>
+          <div class="menu-item flex" style="padding-top: -5px;">
+            Activity &nbsp;
+            <img src="/asset/coin.png" alt="" class="coin-img" />
+          </div>
+          <div class="menu-item">web3.0</div>
         </div>
       </div>
+    </div>
 
-      <div class="header-user flex items-center">
-        <div class="header-user-p header-user-log text-mainTextColor">
-          <a href="">
-            <button class="px-6 py-2">login</button>
-          </a>
-          <a href="">
-            <button class="bg-mainBlue px-4 py-2 rounded-2xl">Sign up</button>
-          </a>
-        </div>
-
-        <div
-          class="header-user-p header-user-icon text-mainTextColor flex justify-between"
-        >
-          <i class="fa-solid fa-clipboard-question"></i>
-          <i class="fa-regular fa-message"></i>
-          <i class="fa-regular fa-file-zipper"></i>
-          <i class="fa-solid fa-earth-europe"></i>
-        </div>
-
-        <div class="navbar-toggle text-mainTextColor ml-auto">
-          <button class="toggle-btn">
-            <i class="fa-solid fa-sliders"></i>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <div class="navOnSmallScreen hidden bg-firstBlack flex flex-col gap-5">
-      <div class="header-nav-mobile">
-        <div class="text-mainTextColor flex flex-col mr-7 gap-5 text-right">
-          <div class="">Buy Crypto</div>
-          <div class="">Market</div>
-          <div class="">Trades</div>
-          <div class="">Derivatives</div>
-          <div class="">Earn</div>
-          <div class="">Finance</div>
-          <div class="">Content</div>
-          <div class="">Activity</div>
-          <div class="">web3.0</div>
-        </div>
-      </div>
-
-      <div class="flex flex-col text-right text-mainTextColor">
+    <div class="header-user flex items-center">
+      <div class="header-user-p header-user-log text-mainTextColor">
         <a href="">
           <button class="px-6 py-2">login</button>
         </a>
         <a href="">
-          <button class="bg-mainBlue px-4 py-2 rounded-2xl">Sign up</button>
+          <button class="bg-mainBlue px-3 py-1 rounded-md">Sign up</button>
         </a>
       </div>
 
-      <div class="text-mainTextColor mr-7 flex flex-col gap-5 text-right">
+      <div class="header-user-p header-user-icon text-mainTextColor flex justify-between">
         <i class="fa-solid fa-clipboard-question"></i>
         <i class="fa-regular fa-message"></i>
         <i class="fa-regular fa-file-zipper"></i>
         <i class="fa-solid fa-earth-europe"></i>
       </div>
-    </div>
 
-    <section class="showcase flex lg:px-36 min-h-[90%] lg:mt-20 mt-12">
-      <div class="w-1/2 flex flex-col justify-center gap-10">
-        <h1 class="text-6xl font-bold">
-          Buy Crypto on <span class="text-blue2">Huobi</span> Your Top Pick
-          Alway
-        </h1>
-        <p class="flex text-2xl">
-          Sign up and trade to earn
-          <img src="./asset/coin.webp" alt="" class="mx-2 coin-img" />
-          <span class="font-bold">2 USDT</span>
-        </p>
-        <button
-          class="showcase-btn bg-blue2 px-10 py-3 text-mainTextColor font-bold"
-        >
-          Sign up
+      <div class="navbar-toggle text-mainTextColor ml-auto">
+        <button class="toggle-btn">
+          <i class="fa-solid fa-sliders"></i>
         </button>
       </div>
+    </div>
+  </header>
 
-      <div class="showcase-img lg:w-1/2">
-        <img src="./asset/huobi.svg" alt="" class="" />
-      </div>
-    </section>
-
-    <div class="text-center py-5">
-      <h2>
-        Huobi Launches Project Benefits Program to Call for High-quality
-        Projects to List on Huobi <span class="text-blue2">More</span>
-      </h2>
+  <section class="showcase flex lg-px-36 min-h-[90%] px-[4rem]">
+    <div class="w-1/2 flex flex-col justify-center gap-10">
+      <h1 class="text-6xl font-bold huobi-text">
+        Buy Crypto on <span class="text-blue2">Huobi</span> Your Top Pick
+        Alway
+      </h1>
+      <p class="flex text-2xl">
+        Sign up and trade to earn
+        <img src="./asset/coin.png" alt="" class="mx-2 mt-2 coin-img" />
+        <span class="font-bold">2 USDT</span>
+      </p>
+      <button class="showcase-btn bg-blue2 px-10 py-3 text-mainTextColor font-bold">
+        Sign up
+      </button>
     </div>
 
-    <section class="px-36 bg-cbg py-5">
-      <div class="img-slider my-10">
-        <div class="slider-body">
-          <div class="slide1">
-            <img src="./asset/slide1.webp" alt="" class="slide-img" />
+    <div class="showcase-img w-1/2">
+      <img src="./asset/huobi.svg" alt="" class="" />
+    </div>
+  </section>
+
+  <div class="text-center py-5">
+    <h2>
+      Huobi Launches Project Benefits Program to Call for High-quality
+      Projects to List on Huobi <span class="text-blue2">More</span>
+    </h2>
+  </div>
+
+  <section class="px-36 bg-cbg py-5">
+    
+    <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+      <div class="w-full relative flex items-center justify-center">
+          <button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
+              <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+          </button>
+          <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+              <div id="slider" class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+                  <div class="flex flex-shrink-0 relative sm:w-auto">
+                      <img src="./asset/slide1.webp" alt="black chair and white table" class="object-cover object-center sliddy" />
+                      <div class="absolute w-full h-full p-6">
+                      </div>
+                  </div>
+                  <div class="flex flex-shrink-0 relative sm:w-auto">
+                      <img src="./asset/slide1.webp" alt="sitting area" class="object-cover object-center sliddy" />
+                      <div class="absolute w-full h-full p-6">
+                      </div>
+                  </div>
+                  <div class="flex flex-shrink-0 relative sm:w-auto">
+                      <img src="./asset/slide1.webp" alt="sitting area" class="object-cover object-center sliddy" />
+                      <div class="absolute w-full h-full p-6">
+                      </div>
+                  </div>
+                  <div class="flex flex-shrink-0 relative sm:w-auto">
+                      <img src="./asset/slide1.webp" alt="sitting area" class="object-cover object-center sliddy" />
+                      <div class="absolute w-full h-full p-6">
+                      </div>
+                  </div>
+                  <div class="flex flex-shrink-0 relative sm:w-auto">
+                      <img src="./asset/slide1.webp" alt="black chair and white table" class="object-cover object-center sliddy" />
+                      <div class="absolute w-full h-full p-6">
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="img-container">
-            <img src="./asset/slide1.webp" alt="" class="slide-img" />
-          </div>
-          <div class="img-container">
-            <img src="./asset/slide1.webp" alt="" class="slide-img" />
-          </div>
-          <div class="img-container">
-            <img src="./asset/slide1.webp" alt="" class="slide-img" />
-          </div>
-          <div class="img-container">
-            <img src="./asset/slide1.webp" alt="" class="slide-img" />
-          </div>
-          <div class="img-container">
-            <img src="./asset/slide1.webp" alt="" class="slide-img" />
-          </div>
-        </div>
+          <button aria-label="slide forward" class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="next">
+              <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+          </button>
       </div>
-    </section>
-  </body>
-  <script src="script.js"></script>
-  <script
-    src="https://kit.fontawesome.com/fc49c28ef9.js"
-    crossorigin="anonymous"
-  ></script>
+  </div>
+
+  
+  
+
+  </section>
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/fc49c28ef9.js" crossorigin="anonymous"></script>
+
 </html>
