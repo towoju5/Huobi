@@ -2,11 +2,11 @@
 
 const toggleBtn = document.querySelector('.toggle-btn');
 const navbarMenu = document.querySelector('.header-nav-nav');
-console.log(navbarMenu);
-console.log(toggleBtn);
+// console.log(navbarMenu);
+// console.log(toggleBtn);
 
 toggleBtn.addEventListener('click', () => {
-  console.log('i am clicked');
+  // console.log('i am clicked');
   navbarMenu.classList.toggle('show-nav');
 });
 
@@ -32,5 +32,5 @@ function goPrev() {
     else defaultTransform = defaultTransform + 250;
     slider.style.transform = "translateX(" + defaultTransform + "px)";
 }
-setInterval(goNext, 1000)
+setInterval(goNext, 5000)
 prev.addEventListener("click", goPrev);

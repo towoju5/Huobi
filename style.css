@@ -73,7 +73,7 @@ body {
   margin-right: 30px;
 }
 
-.img-container img {
+.img-container {
   width: 25rem;
 }
 
@@ -91,10 +91,6 @@ body {
     display: none !important;
   }
 
-  .toggle-btn {
-    display: block;
-  }
-
   .header-nav-nav.show-nav {
     display: flex;
     flex-direction: row;
@@ -110,7 +106,9 @@ body {
   }
 
   .showcase-img {
-    width: 100px;
+    /* width: 100px; */
+    height: 100%;
+    width: max-content;
   }
 }
 
@@ -150,11 +148,12 @@ body {
 .hbg-trigger-triangle {
   width: 14px;
   height: 14px;
-  background: url('/asset/dropdown.svg'); no-repeat center center;
+  background: url('/asset/dropdown.svg');
+  no-repeat center center;
   -webkit-transition: -webkit-transform .2s linear;
   transition: -webkit-transform .2s linear;
   transition: transform .2s linear;
-  transition: transform .2s linear,-webkit-transform .2s linear;
+  transition: transform .2s linear, -webkit-transform .2s linear;
 }
 
 .submenu {
@@ -163,7 +162,7 @@ body {
 
 .hbg-dropdown-v2__body {
   position: absolute;
-  margin-top: 1.6rem;
+  margin-top: 1.5rem;
   background-color: #20222b;
   padding: 2rem 1.4rem;
   height: auto;
@@ -220,4 +219,188 @@ body {
   color: var(--hbg-header-main-txtcolor);
   margin-bottom: 4px;
   text-align-last: left;
+}
+
+/* .showcase {
+  background-image: url('https://hbg-fed-static-prd.hbfile.net/enhome/_next/static/media/topBg.4ae1f4d8.png');
+} */
+
+@media screen and (max-width: 530.1px) {
+  .huobi-text {
+    font-size: 24px;
+    line-height: 48px;
+  }
+}
+
+.huobi-text {
+  font-size: 53px;
+  line-height: 78px;
+}
+
+@media screen and (max-width: 530.1px) {
+  .huobi-text {
+    max-width: 420px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -10px;
+    font-size: 36px;
+    line-height: 52px;
+  }
+}
+
+.huobi-text {
+  font-family: montserrat-black, roboto, pingfang sc;
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 121px;
+  color: var(--text-1);
+}
+
+@media screen and (min-width: 800px) {
+  .huobi-medium {
+    font-family: montserrat-medium, roboto, pingfang sc;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--text-1);
+    margin-top: 40px;
+    margin-bottom: 36px;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    letter-spacing: 1px !important;
+  }
+
+  .menu-item:hover {
+    border-top: #0094FF;
+  }
+
+  .md-text-center {
+    padding: 10rem 0px;
+  }
+
+  .hero-text {
+    font-size: 3.7rem;
+    line-height: 1;
+    font-weight: 700;
+    padding-top: 6.5rem;
+  }
+
+  .toggle-btn, .toggleable {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .huobi-medium {
+    font-family: montserrat-medium, roboto, pingfang sc;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--text-1);
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .md-text-center {
+    text-align: center;
+  }
+
+  .showcase-btn {
+    width: 30%;
+    border-radius: 50px;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 700;
+    padding-top: .5rem;
+    padding-top: .3rem;
+  }
+}
+
+/* . */
+
+.span_img {
+  margin-left: 12px;
+  margin-right: 12px;
+  padding-left: 28px;
+  font-weight: 700;
+  font-family: montserrat-black, roboto, pingfang sc;
+  background: url(https://hbg-fed-static-prd.hbfile.net/enhome/_next/static/media/icon-dollar.996d65d4.png) no-repeat left center/22px 20px;
+}
+
+/* new menu */
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+    Based on: https://codepen.io/nickelse/pen/YGPJQG
+    Influenced by: https://sproutsocial.com/
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* #Mega Menu Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.mega-menu {
+  display: none;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+
+
+/* #hoverable Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hoverable {
+  position: static;
+}
+
+.hoverable>a:after {
+  content: "\25BC";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.hoverable:hover .mega-menu {
+  display: block;
+}
+
+
+/* #toggle Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.toggleable>label {
+  content: "\25BC";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-input:not(checked)~.mega-menu {
+  display: none;
+}
+
+.toggle-input:checked~.mega-menu {
+  display: block;
+}
+
+.toggle-input:checked+label {
+  color: white;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+li:after {
+  display: none!important;
 }
