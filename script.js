@@ -1,6 +1,7 @@
 'use strict';
 
 const toggleBtn = document.querySelector('.toggle-btn');
+<<<<<<< HEAD
 const navbarMenu = document.querySelector('.header-nav-nav');
 // console.log(navbarMenu);
 // console.log(toggleBtn);
@@ -8,6 +9,15 @@ const navbarMenu = document.querySelector('.header-nav-nav');
 toggleBtn.addEventListener('click', () => {
   // console.log('i am clicked');
   navbarMenu.classList.toggle('show-nav');
+=======
+const navOnSmallScreen = document.querySelector('.navOnSmallScreen');
+console.log(navOnSmallScreen);
+console.log(toggleBtn);
+
+toggleBtn.addEventListener('click', () => {
+  console.log('i am clicked');
+  navOnSmallScreen.classList.toggle('hidden');
+>>>>>>> 0f427a9b1284b7cbe8836d1312f33a174cb377fc
 });
 
 $(function(){

@@ -83,13 +83,11 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .header-nav-nav {
     display: none;
   }
 
-  .header-user-p {
-    display: none !important;
-  }
 
   .header-nav-nav.show-nav {
     display: flex;
@@ -106,9 +104,14 @@ body {
   }
 
   .showcase-img {
+<<<<<<< HEAD
     /* width: 100px; */
     height: 100%;
     width: max-content;
+=======
+    width: 100%;
+    height: 50vh;
+>>>>>>> 0f427a9b1284b7cbe8836d1312f33a174cb377fc
   }
 }
 
