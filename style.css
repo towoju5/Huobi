@@ -81,11 +81,15 @@ body {
   display: none;
   cursor: pointer;
 }
+/* .mobile-menu {
+  display: none;
+} */
 
 @media (max-width: 768px) {
 
-  .header-nav-nav {
-    display: none;
+  .header-nav-nav,
+  .header-user {
+    display: none !important;
   }
 
 
