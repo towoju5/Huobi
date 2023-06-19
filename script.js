@@ -36,3 +36,10 @@ function goPrev() {
 }
 setInterval(goNext, 1000);
 prev.addEventListener('click', goPrev);
+
+const mobileDropBtn = document.querySelector('.plusbtn');
+
+const mobileDropContent = document.querySelector('.accodian-message');
+mobileDropBtn.addEventListener('click', function () {
+  document.querySelector('.accodian-message').classList.toggle('hidden');
+});

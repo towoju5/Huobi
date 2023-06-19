@@ -81,9 +81,6 @@ body {
   display: none;
   cursor: pointer;
 }
-/* .mobile-menu {
-  display: none;
-} */
 
 @media (max-width: 768px) {
 

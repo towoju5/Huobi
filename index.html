@@ -38,6 +38,7 @@
             colors: {
               firstBlack: '#0E1015',
               mainTextColor: '#F0F1F4',
+              bgMbutton: 'rgba(1, 115, 229, 0.1)',
               mainBlue: '#0094ff',
               blue2: '#0173e5',
               cbg: '#f7f9fb',
@@ -192,101 +193,81 @@
     </header>
 
     <div
-      class="mobile-menu hidden mt-10 bg-firstBlack text-mainTextColor flex flex-col gap-5 py-5 justify-between text-center"
+      class="mobile-menu hidden mt-10 bg-firstBlack text-mainTextColor flex flex-col py-5"
     >
-      <div class="menu-item">
-        <span> Buy Crypto</span>
-        <div class="submenu">
-          <div class="hbg-dropdown-v2__body p-10">
-            <div class="hbg-dropdown-v2__body-item active">
-              <div class="hbg-dropdown-v2__body-item-icon">
-                <img
-                  class="hbg-dropdown-v2__body-item-icon-img"
-                  src="https://download.hbfile.net/hbg/img/202211221432/024e30439d4c49e3866bf9c6c33ffa88/967d863b122213531718da493d9b8c69.png"
-                  alt=""
-                />
-              </div>
+      <div class="border-y-2 p-5">
+        <h3>Welcome to Huobi</h3>
+        <p class="text-xs text-mainTextColor font-thin">
+          More surprises awaits you after logging in!
+        </p>
+        <div class="display grid grid-cols-2 gap-5 items-center mt-5">
+          <a href="">
+            <button class="w-full py-2 bg-bgMbutton text-xs text-mainBlue">
+              login
+            </button>
+          </a>
+          <a href="">
+            <button class="w-full bg-mainBlue text-xs px-3 py-2">
+              Sign up
+            </button>
+          </a>
+        </div>
+      </div>
 
-              <div class="hbg-dropdown-v2__body-item-content">
-                <div class="hbg-dropdown-v2__body-item-title">
-                  Quick Buy/Sell
-                </div>
-                <div class="hbg-dropdown-v2__body-item-subtitle">
-                  Buy cryptos with Visa, Mastercard, and more
-                </div>
-              </div>
+      <div class="p-5 border-b-2 flex flex-col gap-5">
+        <div class="menu-item">
+          <div class="accordian-item">
+            <div class="accordian-btn flex flex-row justify-between">
+              <h1>Buy Crypto</h1>
+              <button class="plusbtn">&darr;</button>
             </div>
-            <div class="hbg-dropdown-v2__body-item active">
-              <div class="hbg-dropdown-v2__body-item-icon">
-                <img
-                  class="hbg-dropdown-v2__body-item-icon-img"
-                  src="https://download.hbfile.net/hbg/img/202211221433/e13056adb7ed495e820f8d457da48b6f/76519f3d483de65fe41caf578a303ceb.png"
-                  alt=""
-                />
-              </div>
-              <div class="hbg-dropdown-v2__body-item-content">
-                <div class="hbg-dropdown-v2__body-item-title">Fiat Deposit</div>
-                <div class="hbg-dropdown-v2__body-item-subtitle">
-                  Deposit fiat currencies at a low fee
-                </div>
-              </div>
-            </div>
-            <div class="hbg-dropdown-v2__body-item active">
-              <div class="hbg-dropdown-v2__body-item-icon">
-                <img
-                  class="hbg-dropdown-v2__body-item-icon-img"
-                  src="https://download.hbfile.net/hbg/img/202302161735/be177043bc1d4e57870b3c5a98aa59c9/a675f0db66b2172e0ea19681c0a1d9bc.png"
-                  alt=""
-                />
-              </div>
-              <div class="hbg-dropdown-v2__body-item-content">
-                <div class="hbg-dropdown-v2__body-item-title">OTC Desk</div>
-                <div class="hbg-dropdown-v2__body-item-subtitle">
-                  For large quota with dedicated service
-                </div>
-              </div>
-            </div>
-            <div class="hbg-dropdown-v2__body-item active">
-              <div class="hbg-dropdown-v2__body-item-icon">
-                <img
-                  class="hbg-dropdown-v2__body-item-icon-img"
-                  src="https://download.hbfile.net/hbg/img/202211221433/f954149ddcdd435a9872223e359ba6b8/a708de3e75f05013faec9c54a52ca95e.png"
-                  alt=""
-                />
-              </div>
-              <div class="hbg-dropdown-v2__body-item-content">
-                <div class="hbg-dropdown-v2__body-item-title">P2P</div>
-                <div class="hbg-dropdown-v2__body-item-subtitle">
-                  Match the best price with zero fees
-                </div>
-              </div>
+
+            <div class="accodian-message hidden p-5 flex flex-col gap-5">
+              <div>Quick Buy/Sell</div>
+              <div>Fait Deposit</div>
+              <div>OTC Desk</div>
             </div>
           </div>
         </div>
+        <div class="menu-item">Market</div>
+        <div class="menu-item">Trades</div>
+        <div class="menu-item">Derivatives</div>
+        <div class="menu-item">Earn</div>
+        <div class="menu-item">Finance</div>
+        <div class="menu-item">Content</div>
+        <div class="menu-item flex" style="padding-top: -5px">
+          Activity &nbsp;
+          <img src="/asset/coin.png" alt="" class="coin-img" />
+        </div>
+        <div class="menu-item">web3.0</div>
       </div>
-      <div class="menu-item">Market</div>
-      <div class="menu-item">Trades</div>
-      <div class="menu-item">Derivatives</div>
-      <div class="menu-item">Earn</div>
-      <div class="menu-item">Finance</div>
-      <div class="menu-item">Content</div>
-      <div class="menu-item flex justify-center" style="padding-top: -5px">
-        Activity &nbsp;
-        <img src="/asset/coin.png" alt="" class="coin-img" />
+
+      <div class="px-5 pb-3 mt-5 flex flex-col gap-5">
+        <div class="menu-item">
+          <div class="flex flex-row justify-between">
+            <h1>Language</h1>
+            <button class="plusbtn">
+              <span class="mr-2 font-thin">English</span>&rarr;
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="flex flex-row justify-between">
+            <h1>Currency</h1>
+            <button class="plusbtn">
+              <span class="mr-2 font-thin">USD</span>&rarr;
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="flex flex-row justify-between">
+            <h1>Download App</h1>
+            <button class="plusbtn">&rarr;</button>
+          </div>
+        </div>
       </div>
-      <div class="menu-item">web3.0</div>
-
-      <a href="">
-        <button class="px-6 py-2 border-2 rounded-md">login</button>
-      </a>
-      <a href="">
-        <button class="bg-mainBlue px-3 py-1 rounded-md">Sign up</button>
-      </a>
-
-      <i class="fa-solid fa-clipboard-question"></i>
-      <i class="fa-regular fa-message"></i>
-      <i class="fa-regular fa-file-zipper"></i>
-      <i class="fa-solid fa-earth-europe"></i>
     </div>
 
     <section class="showcase flex lg-px-36 min-h-[90%] px-[4rem]">
